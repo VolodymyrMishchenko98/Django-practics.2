@@ -1,0 +1,79 @@
+/* ── layout ── */
+body {
+  margin: 0;
+  background-color: #f2f4f8;
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* ── sidebar / nav ── */
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100dvh;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 40px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 10;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04);
+}
+
+aside a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #444;
+  text-decoration: none;
+  font-size: 14px;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+aside a:hover {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+/* ── page content ── */
+main {
+  margin-left: 180px;
+  min-height: 100dvh;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+main h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a73e8;
+  margin-bottom: 12px;
+}
+
+main p {
+  max-width: 600px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ── contacts button ── */
+button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+button:hover {
+  background: #155fc0;
+}
